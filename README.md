@@ -21,6 +21,6 @@ docker exec -it banking-datapipeline-postgres-1 cat /var/lib/postgresql/data/pg_
 
 
 airflow db init
-airflow users create --username abhi --firstname abhi --lastname dobhal --password jiraya@119 --email abhi@email.com --role Admin
+airflow users create --username abhi --firstname abhi --lastname dobhal --password  --email abhi@email.com --role Admin
 
 docker exec -it kafka /usr/bin/kafka-console-consumer --bootstrap-server kafka:9092 --topic banking_server.public.transactions --from-beginning
