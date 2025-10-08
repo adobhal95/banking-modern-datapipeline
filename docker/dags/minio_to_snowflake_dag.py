@@ -6,7 +6,7 @@ from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
 from dotenv import load_dotenv
 
-# Load environment variables
+# Load environment variables inside airflow
 load_dotenv()
 
 # -------- MinIO Config --------
